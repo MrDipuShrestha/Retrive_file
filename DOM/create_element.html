@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Cretate Element</title>
+  </head>
+  <body style="background: #212121; color: #fff">
+    <h1>Create a new element in the DOM using JavaScript</h1>
+
+    <script>
+      const newElem = document.createElement("h2");
+      console.log(newElem);
+      newElem.setAttribute("id", "newElement");
+      newElem.setAttribute("class", "highlight");
+      newElem.style.textTransform = "uppercase";
+
+      const myText = document.createTextNode("i am creating next using DOM");
+
+      newElem.appendChild(myText);
+
+      document.body.appendChild(newElem);
+    </script>
+  </body>
+</html>
